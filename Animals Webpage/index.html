@@ -4,61 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حيوانات برية</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .column {
-            flex: 1;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            margin: 10px;
-        }
-
-        .animal-info {
-            text-align: center;
-            padding: 20px;
-            font-weight: 1000;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-bottom: 1px solid #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="column">
-        <div class="animal-info">
-            <h2>الأسد</h2>
-            <img src="lion.jpg" alt="Lion Image">
-            <p>الأسد حيوان بري مهيب معروف بقوته وشجاعته، وغالبا ما يشار إليه باسم ملك الغابة</p>
+    <div class="container">
+        <div class="column">
+            <h2>الفهد</h2>
+            <img src="cheetah.jpg" alt="Cheetah Image">
+            <p>الفهد حيوان بري ذو فراء مرقط، يتميز بسرعته الكبيرة. يعيش في المناطق الجافة والعشبية</p>
         </div>
-    </div>
 
-    <div class="column">
-        <div class="animal-info">
-            <h2>الفيل</h2>
-            <img src="elephant.jpg" alt="Elephant Image">
-            <p>الفيل هو أكبر حيوان بري، معروف بذكائه وسلوكه الاجتماعي، وله جذع وأنياب كبيرة</p>
+        <div class="column">
+            <h2>النمر</h2>
+            <img src="tiger.jpg" alt="Tiger Image">
+            <p>النمر حيوان بري متميز بفروه المخطط وقوته البدنية. يُعتبر صيادًا ماهرًا ويعيش في مختلف المناطق</p>
         </div>
-    </div>
 
-    <div class="column">
-        <div class="animal-info">
+        <div class="column">
             <h2>الزرافة</h2>
             <img src="giraffe.jpeg" alt="Giraffe Image">
-            <p>الزرافة حيوان بري طويل القامة ورشيق وله رقبة طويلة، وهي معروفة بمعطفها المرقط المميز وطبيعتها اللطيفة</p>
+            <p>الزرافة حيوان بري طويل القامة ورشيق، يتميز برقبته الطويلة. معروفة بمعطفها المرقط وطبيعتها اللطيفة</p>
+        </div>
+
+        <div class="column">
+            <h2>الفيل</h2>
+            <img src="elephant.jpg" alt="Elephant Image">
+            <p>الفيل هو أكبر حيوان بري، معروف بذكائه وسلوكه الاجتماعي. لديه جذع ضخم وأنياب كبيرة</p>
+        </div>
+
+        <div class="column">
+            <h2>الأسد</h2>
+            <img src="lion.jpg" alt="Lion Image">
+            <p>الأسد حيوان بري مهيب، معروف بقوته وشجاعته. غالبًا ما يُشار إليه باسم ملك الغابة</p>
         </div>
     </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>فصيلة الحيوان</th>
+                <th>بيئة العيش</th>
+                <th>طريقة التكاثر</th>
+                <th>اسم الحيوان</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>السنوريات</td>
+                <td>غابات، مناطق حارة</td>
+                <td>الولادة</td>
+                <td>الأسد</td>
+            </tr>
+            <tr>
+                <td>الفيليات</td>
+                <td>غابات، صحاري، سهول</td>
+                <td>الولادة</td>
+                <td>الفيل</td>
+            </tr>
+            <tr>
+                <td>الزرافيات</td>
+                <td>غابات، سهول</td>
+                <td>الولادة</td>
+                <td>الزرافة</td>
+            </tr>
+            <tr>
+                <td>السنوريات</td>
+                <td>غابات، صحاري، سهول</td>
+                <td>الولادة</td>
+                <td>النمر</td>
+            </tr>
+            <tr>
+                <td>السنوريات</td>
+                <td>غابات، صحاري، سهول</td>
+                <td>الولادة</td>
+                <td>الفهد</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
